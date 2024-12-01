@@ -1,0 +1,35 @@
+# Local Terraform directories
+.terraform/
+
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash log files
+crash.log
+
+# Sensitive variable files
+*.tfvars
+
+# Terraform plan files
+*.tfplan
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform configuration lock file
+.terraform.lock.hcl
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Other system files
+.DS_Store
+
+# Ignore any files starting with a dot except .gitignore
+.*
+!.gitignore
