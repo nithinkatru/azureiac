@@ -1,23 +1,25 @@
-variable "resource_group_name" {
-  description = "Name of the resource group"
-  default     = "MyResourceGroup"
-}
-
-variable "location" {
-  description = "Azure region"
-  default     = "eastus"
-}
-
 variable "admin_username" {
-  description = "Admin username"
-  default     = "azureuser"
+  description = "The admin username for the virtual machine."
+  type        = string
 }
 
 variable "admin_password" {
-  description = "Admin password"
-}
-output "vm_id" {
-  description = "ID of the Virtual Machine"
-  value       = azurerm_virtual_machine.vm.id
+  description = "The admin password for the virtual machine."
+  type        = string
+  sensitive   = true
 }
 
+variable "tenant_id" {
+  description = "Azure AD Tenant ID."
+  type        = string
+}
+
+variable "subscription_id" {
+  description = "Azure Subscription ID."
+  type        = string
+}
+variable "azure_devops_pat" {
+  description = "Personal Access Token for Azure DevOps"
+  type        = string
+  sensitive   = true
+}

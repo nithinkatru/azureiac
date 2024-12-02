@@ -29,7 +29,4 @@ desktop.ini
 
 # Other system files
 .DS_Store
-
-# Ignore any files starting with a dot except .gitignore
-.*
-!.gitignore
+terraform.tfvars
